@@ -24,6 +24,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permitir que o app-clima use sua localização para mostrar o clima local."
+        }
+      ]
+    ]
   }
 }

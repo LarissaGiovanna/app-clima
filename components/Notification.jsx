@@ -3,6 +3,6 @@ import react from "react";
 
 export default function Notification (){
     return(
-        <Bell/>
+        <Bell style={{color: '#fff'}}/>
     )
 }

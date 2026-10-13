@@ -28,7 +28,7 @@ export function buildAlerts(hourly, cityName = '') {
     const temp = hourly.temperature_2m?.[i];
     const hourLabel = formatAlertHour(time);
 
-    if (typeof code === 'number' && code >= 65 && code <= 82) {
+    if (typeof code === 'number' && code >= 65 && code <= 82 && ![71, 73, 75, 77].includes(code)) {
       alerts.push({
         id: `rain-${time}`,
         type: 'rain',
